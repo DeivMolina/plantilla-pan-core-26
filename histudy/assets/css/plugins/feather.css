@@ -541,6 +541,10 @@
 .feather-phone-outgoing:before {
 	content: "\e9ad";
 }
+
+.feather-whatsapp:before {
+	content: "\f232";
+}
 .feather-pie-chart:before {
 	content: "\e9ae";
 }
