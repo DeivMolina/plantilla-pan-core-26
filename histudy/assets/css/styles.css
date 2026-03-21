@@ -19112,7 +19112,7 @@ span.transparent-button:hover i {
   display: flex;
   align-items: center;
   background: rgba(226, 213, 252, 0.8);
-  box-shadow: 0 12px 22px 0 rgba(214, 191, 242, 0.28);
+  box-shadow: 0 12px 22px 0 rgba(0, 116, 184, 0.28);
   padding: 0 20px;
   border: 1px solid #fff;
   border-radius: 500px;
