@@ -166,13 +166,13 @@
   --black-opacity: rgba(0, 0, 0, 0.04);
   --heading-opacity: #00163750;
 	
-  --color-card-1: #cee7ca;  /*-- green light panduit --*/
-  --color-card-2: #bfdced;  /*-- blue medium light panduit --*/
-  --color-card-3: #bfeae1;  /*-- teal light panduit --*/
-  --color-card-4: #f0f4cc;  /*-- lime light panduit --*/
-  --color-card-5: #7ec36c;  /*-- green medium panduit --*/
+  --color-card-1: #e2fcdc;  /*-- green light panduit #cee7ca--*/
+  --color-card-2: #dee7fc;  /*-- blue medium light panduit #bfdced --*/
+  --color-card-3: #e1fcf7;  /*-- teal light panduit #bfeae1--*/
+  --color-card-4: #f6fad7;  /*-- lime light panduit #f0f4cc--*/
+  --color-card-5: #f5f8fc ;  /*-- green medium panduit #7ec36c gray light--*/
   --color-card-6: #80badc;  /*-- blue medium panduit --*/
-	 --color-card-7: #d2e067;  /*-- lime medium panduit --*/
+  --color-card-7: #d2e067;  /*-- lime medium panduit --*/
 	
   --color-success: #53af3b; 
   --color-danger: #FF0003;
@@ -15886,7 +15886,7 @@ span.transparent-button:hover i {
   top: 0;
   left: 0;
   transform: rotateY(180deg) translateZ(1px);
-  background: linear-gradient(1turn, #e9dcfa, #d05aff);
+  background: linear-gradient(1turn, #e6edfc, #193e92);
   width: 100%;
   display: flex;
   flex-direction: column;
@@ -21019,7 +21019,8 @@ span.transparent-button:hover i {
 }
 
 .filter-button-default,
-.filter-tab-button {
+.filter-tab-button,
+.filter-tab-buttonB{
   display: flex;
   justify-content: center;
   margin: -10px;
@@ -21029,7 +21030,8 @@ span.transparent-button:hover i {
 }
 @media only screen and (max-width: 767px) {
   .filter-button-default,
-  .filter-tab-button {
+  .filter-tab-button
+  .filter-tab-buttonB{
     margin: -5px;
   }
 }
@@ -21052,11 +21054,32 @@ span.transparent-button:hover i {
   transition: 0.4s;
   position: relative;
 }
+
+.filter-tab-buttonB button,
+.filter-tab-buttonB a {
+  border: 0 none;
+  padding: 0px 35px;
+  text-transform: capitalize;
+  background: var(--color-white);
+  color: var(--color-bodyest);
+  margin: 10px;
+  box-shadow: var(--shadow-1);
+  height: 45px;
+  line-height: 45px;
+  border-radius: 500px;
+  font-size: 16px;
+  letter-spacing: -0.6px;
+  transition: 0.4s;
+  position: relative;
+}
+
 @media only screen and (min-width: 992px) and (max-width: 1199px) {
   .filter-button-default button,
   .filter-button-default a,
   .filter-tab-button button,
-  .filter-tab-button a {
+  .filter-tab-button a
+  .filter-tab-buttonB button,
+  .filter-tab-buttonB a {
     padding: 0px 20px;
   }
 }
@@ -21064,7 +21087,9 @@ span.transparent-button:hover i {
   .filter-button-default button,
   .filter-button-default a,
   .filter-tab-button button,
-  .filter-tab-button a {
+  .filter-tab-button a 
+  .filter-tab-buttonB button,
+  .filter-tab-buttonB a{
     padding: 0px 24px;
   }
 }
@@ -21072,7 +21097,9 @@ span.transparent-button:hover i {
   .filter-button-default button,
   .filter-button-default a,
   .filter-tab-button button,
-  .filter-tab-button a {
+  .filter-tab-button a
+  .filter-tab-buttonB button,
+  .filter-tab-buttonB a {
     padding: 0 20px;
     height: 48px;
     line-height: 48px;
@@ -21096,7 +21123,9 @@ span.transparent-button:hover i {
   .filter-button-default button .course-number,
   .filter-button-default a .course-number,
   .filter-tab-button button .course-number,
-  .filter-tab-button a .course-number {
+  .filter-tab-button a .course-number
+  .filter-tab-buttonB button .course-number,
+  .filter-tab-buttonB a .course-number{
     right: 10px;
     top: 4px;
   }
@@ -21115,7 +21144,19 @@ span.transparent-button:hover i {
   color: var(--color-white) !important;
 }
 
+
+.filter-tab-buttonB button.is-checked,
+.filter-tab-buttonB button.active,
+.filter-tab-buttonB button:hover,
+.filter-tab-buttonB a.is-checked,
+.filter-tab-buttonB a.active,
+.filter-tab-buttonB a:hover {
+  background-color: var(--color-secondary);
+  color: var(--color-white) !important;
+}
+
 .filter-tab-button li,
+.filter-tab-buttonB li,
 .rbt-default-tab-button li {
   margin: 0;
 }
@@ -21759,6 +21800,45 @@ ul.testimonial-thumb-wrapper li a.active .thumb img {
 .scroll-animation-wrapper.no-overlay::before, .scroll-animation-wrapper.no-overlay::after {
   display: none;
 }
+
+
+.scroll-animation-wrapper2 {
+  position: relative;
+  z-index: 1;
+}
+.scroll-animation-wrapper2::before, .scroll-animation-wrapper2::after {
+  position: absolute;
+  height: 100%;
+  width: 100px;
+  background: -webkit-gradient(linear, left top, right top, from(#F5F7FA), to(hsla(0, 0%, 100%, 0)));
+  background: -webkit-linear-gradient(left, #F5F7FA, hsla(0, 0%, 100%, 0));
+  background: -moz-linear-gradient(left, #F5F7FA 0, hsla(0, 0%, 100%, 0) 100%);
+  background: linear-gradient(90deg, #F5F7FA 0, hsla(0, 0%, 100%, 0));
+  z-index: 2;
+  content: "";
+}
+@media only screen and (max-width: 767px) {
+  .scroll-animation-wrapper2::before, .scroll-animation-wrapper2::after {
+    width: 50px;
+  }
+}
+.scroll-animation-wrapper2::before {
+  top: 0;
+  left: 0;
+}
+.scroll-animation-wrapper2::after {
+  top: 0;
+  right: 0;
+  -webkit-transform: rotate(180deg);
+  -moz-transform: rotate(180deg);
+  transform: rotate(180deg);
+}
+.scroll-animation-wrapper2.no-overlay::before, .scroll-animation-wrapper2.no-overlay::after {
+  display: none;
+}
+
+
+
 
 .scroll-animation {
   display: flex;
