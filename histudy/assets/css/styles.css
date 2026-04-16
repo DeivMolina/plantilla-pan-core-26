@@ -21912,7 +21912,7 @@ ul.testimonial-thumb-wrapper li a.active .thumb img {
   content: "";
   right: 40px;
   top: 40px;
-  z-index: -1;
+  z-index: 1;
   background-image: url(../images/shape/quote.svg);
   background-repeat: no-repeat, repeat;
   width: 52px;
