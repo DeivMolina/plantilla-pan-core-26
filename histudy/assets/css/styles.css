@@ -261,7 +261,7 @@
   --gradient-5: linear-gradient(rgb(216, 241, 255) 0%, rgb(221, 251, 245) 100%);
   --gradient-6: linear-gradient(to right, rgba(255, 255, 255, 0.15), rgba(216, 241, 255, 0.15), rgba(187, 220, 239, 0.15));
   --gradient-7: linear-gradient(218.15deg, var(--color-secondary) 0%, var(--color-primary) 100%);
-  --gradient-8: linear-gradient(270deg, #193e92 0%, #00aa89 100%);
+  --gradient-8: linear-gradient(270deg, #007bc2 0%, #00aa89 100%);
   --gradient-9: linear-gradient(180deg, #193e92 0%, #bfeae1 100%);
   --gradient-10: linear-gradient(180deg, #002256d9 0%, #bfdced17 100%);
 }
@@ -8045,15 +8045,15 @@ hr {
 }
 
 .bg_image--17 {
-  background-image: url(../images/bg/bg-image-17.jpg);
+  background-image: url(../images/PRUEBA/banner3.jpeg);
 }
 
 .bg_image--18 {
-  background-image: url(../images/bg/bg-image-18.jpg);
+  background-image: url(../images/PRUEBA/sLIDER-OP-3-CORE.jpg);
 }
 
 .bg_image--19 {
-  background-image: url(../images/bg/bg-image-19.jpg);
+  background-image: url(../images/PRUEBA/sLIDER-OP-4-CORE.jpg);
 }
 
 .bg_image--20 {
@@ -8061,7 +8061,7 @@ hr {
 }
 
 .bg_image--21 {
-  background-image: url(../images/bg/bg-image-21.jpg);
+  background-image: url(../images/PRUEBA/SLIDER-OP-2-CORE.jpg);
 }
 
 .bg_image--22 {
@@ -11566,7 +11566,7 @@ ul.rbt-dropdown-menu.currency-menu li .sub-menu {
   z-index: 99;
 }
 .rbt-header .logo a img {
-  max-height: 50px;
+  max-height: 80px; /*-original 50px, cambió por registro, ver si se tiene que regresar a 50 para no afectar la plantilla--*/
   object-fit: cover;
 }
 @media only screen and (max-width: 575px) {
@@ -21648,7 +21648,7 @@ Testimonial Styles
 }
 
 .bg-theme-gradient-odd:nth-child(odd) .rbt-testimonial-box .inner {
-  background: var(--gradient-7);
+  background: var(--gradient-3);
 }
 .bg-theme-gradient-odd:nth-child(odd) .rbt-testimonial-box .description p {
   color: var(--color-white);
@@ -21658,7 +21658,7 @@ Testimonial Styles
 }
 
 .bg-theme-gradient-even:nth-child(even) .rbt-testimonial-box .inner {
-  background: var(--gradient-7);
+  background: var(--gradient-3);
 }
 .bg-theme-gradient-even:nth-child(even) .rbt-testimonial-box .description p {
   color: var(--color-white);
@@ -27363,20 +27363,20 @@ blockquote.has-text-align-right cite,
   z-index: -1;
   bottom: 0;
   right: 0;
-  background-image: url(../images/banner/histudy-text.png);
+  background-image: url(../images/banner/CORE-CORE.png);
   background-repeat: repeat-x;
   background-size: auto;
   height: 206px;
-  width: 52%;
+  width: 72%;
 }
 @media only screen and (min-width: 992px) and (max-width: 1199px) {
   .rbt-banner-3 .edumarque {
-    height: 275px;
+    height: 375px;
   }
 }
 @media only screen and (max-width: 767px) {
   .rbt-banner-3 .edumarque {
-    width: 72%;
+    width: 92%;
   }
 }
 

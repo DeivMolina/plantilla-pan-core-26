@@ -4776,11 +4776,11 @@
  }
  
  .fa-twitter:before {
-     content: "𝕏";
+     content: "\f099";
  }
  
  .fa-twitter-square:before {
-     content: "𝕏";
+     content: "\f081";
  }
  
  .fa-typo3:before {
