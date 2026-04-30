@@ -127,6 +127,8 @@
   --color-coral: #00856A; 	   /*-- teal panduit --*/
   --color-violet: #4FA838;     /*-- green panduit --*/
   --color-pink: #C3D534;	   /*-- lime blue panduit --*/
+  --color-teal: #00A07F;	   /*-- teal 10% ligther panduit --*/
+  --color-blue: #6BC8FF;	   /*-- primary 72% lighter --*/
 
 	
   --color-darker: #192335; /*-- antes #192335 --*/
@@ -711,13 +713,13 @@ h1,
 h2,
 .h2 {
   font-size: var(--h2);
-  line-height: 1.23;
+  line-height: 1.32;
 }
 
 h3,
 .h3 {
   font-size: var(--h3);
-  line-height: 1.14;
+  line-height: 1.24;
 }
 
 h4,
@@ -1120,6 +1122,25 @@ ol ul {
   background: linear-gradient(270deg, var(--color-primary) 0%, var(--color-primary) 100%) !important;
 }
 .rbt-page-banner-wrapper .rbt-banner-image::after, .bg-gradient-9::after {
+  background: linear-gradient(rgb(255, 255, 255) 0%, rgba(255, 255, 255, 0.1) 100%);
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  content: "";
+  z-index: -1;
+}
+
+/*-----------------------------
+    Rbt Background Gradient 222
+-------------------------------*/
+.rbt-page-banner-wrap .rbt-banner-image, .bg-gradient-9 {
+  position: relative;
+  z-index: 1;
+  background: linear-gradient(0deg, var(--color-teal) 0%, var(--color-teal) 100%) !important;
+}
+.rbt-page-banner-wrap .rbt-banner-image::after, .bg-gradient-9::after {
   background: linear-gradient(rgb(255, 255, 255) 0%, rgba(255, 255, 255, 0.1) 100%);
   position: absolute;
   top: 0;
@@ -7980,6 +8001,27 @@ hr {
   background: rgba(225, 234, 154, 0.4588235294) !important;
 }
 
+
+.bg-card-color-11 .inner {
+  background: rgba(211, 238, 255, 0.8) !important;
+}
+
+.bg-card-color-22 .inner {
+  background: rgba(212, 243, 236,1) !important;
+}
+
+.bg-card-color-33 .inner {
+  background: rgba(221, 228, 248, 1) !important;
+}
+
+.bg-card-color-44 .inner {
+  background: rgba(212, 235, 206, 1) !important;
+}
+
+.bg-card-color-55 .inner {
+  background: rgba(225, 234, 154, 1) !important;
+}
+
 /*-----------------------------
     Rbt Background Image
 --------------------------------*/
@@ -8061,15 +8103,15 @@ hr {
 }
 
 .bg_image--17 {
-  background-image: url(../images/slider/sLIDER-OP-5-CORE.webp);
+  background-image: url(../images/main/home/slider/sLIDER-OP-5-CORE.webp);
 }
 
 .bg_image--18 {
-  background-image: url(../images/slider/sLIDER-OP-3-CORE.webp);
+  background-image: url(../images/main/home/slider/sLIDER-OP-3-CORE.webp);
 }
 
 .bg_image--19 {
-  background-image: url(../images/slider/sLIDER-OP-6-CORE.webp);
+  background-image: url(../images/main/home/slider/sLIDER-OP-6-CORE.webp);
 }
 
 .bg_image--20 {
@@ -8077,7 +8119,7 @@ hr {
 }
 
 .bg_image--21 {
-  background-image: url(../images/slider/sLIDER-OP-2-CORE.webp);
+  background-image: url(../images/main/home/slider/sLIDER-OP-2-CORE.webp);
 }
 
 .bg_image--22 {
@@ -9196,7 +9238,7 @@ Primary style
   -ms-transform: translateY(-50%);
   -o-transform: translateY(-50%);
   transform: translateY(-50%);
-  height: 90%;
+  height: 95%;
   width: 1px;
   background-color: #aebcb9;
 }
@@ -11370,7 +11412,7 @@ ul.rbt-dropdown-menu.currency-menu li .sub-menu {
   padding: 8px 0;
 }
 .rbt-header-campaign.bg-image1 {
-  background-image: url(../images/bg/top-banner.png);
+  background-image: url(../images/main/bckg-banner-cintillo-anuncios-core-2026.webp);
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center center;
@@ -12066,7 +12108,7 @@ ul.rbt-dropdown-menu.currency-menu li .sub-menu {
     Mega Menu Options  
 ------------------------------*/
 .mega-top-banner {
-  background-image: url(../images/course/category-10.png), radial-gradient(100% 100% at 100% 0%, #484C7A 0%, #23263B 100%);
+  background-image: url(../images/main/bckg-menu-sesiones-core-2026-V2.webp), radial-gradient(100% 100% at 100% 0%, #484C7A 0%, #23263B 100%);
   background-size: contain;
   background-position: right 30%;
   margin: -25px;
@@ -14568,6 +14610,84 @@ span.transparent-button:hover i {
   z-index: 2;
 }
 
+
+
+/*----------------------------
+    Breadcrumb Style Main  222
+------------------------------*/
+.rbt-page-banner-wrap {
+  display: flex;
+  justify-content: flex-start;
+  flex-direction: column;
+  position: relative;
+  margin: 0 auto;
+  padding: 60px 0px 235px;
+  width: 100%;
+  overflow: hidden;
+}
+@media only screen and (max-width: 767px) {
+  .rbt-page-banner-wrap {
+    padding: 40px 0px 180px;
+  }
+}
+.rbt-page-banner-wrap .rbt-banner-image {
+  display: block;
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  z-index: -4;
+}
+.rbt-page-banner-wrap .rbt-banner-image img {
+  position: absolute;
+  inset: 0px;
+  box-sizing: border-box;
+  padding: 0px;
+  border: none;
+  margin: auto;
+  display: block;
+  width: 0px;
+  height: 0px;
+  min-width: 100%;
+  max-width: 100%;
+  min-height: 100%;
+  max-height: 100%;
+}
+.rbt-page-banner-wrap .rbt-banner-content-top .title-wrapper {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+@media only screen and (max-width: 575px) {
+  .rbt-page-banner-wrap .rbt-banner-content-top .title-wrapper {
+    display: block;
+  }
+}
+.rbt-page-banner-wrap .rbt-banner-content-top .title-wrapper .rbt-badge-2 {
+  margin-left: 20px;
+}
+@media only screen and (max-width: 575px) {
+  .rbt-page-banner-wrap .rbt-banner-content-top .title-wrapper .rbt-badge-2 {
+    margin-left: 0;
+    margin-top: 20px;
+  }
+}
+.rbt-page-banner-wrap .rbt-banner-content-top .title {
+  font-size: 42px;
+}
+@media only screen and (max-width: 767px) {
+  .rbt-page-banner-wrap .rbt-banner-content-top .title {
+    font-size: 32px;
+  }
+}
+.rbt-page-banner-wrap .rbt-banner-content-top .description {
+  color: var(--color-heading);
+}
+
 /*-----------------------------
     Breadcrumb Style Three  
 ------------------------------*/
@@ -16138,6 +16258,86 @@ span.transparent-button:hover i {
   border-color: transparent;
 }
 
+
+/*-------------------------------
+    Service Style SeisSeis  
+---------------------------------*/
+.service-card-66 {
+  height: 100%;
+}
+.service-card-66 .inner {
+  border-radius: 5px;
+  padding: 45px 35px;
+  position: relative;
+  z-index: 1;
+  border: 1px solid var(--color-border);
+  height: 100%;
+}
+@media only screen and (max-width: 767px) {
+  .service-card-66 .inner {
+    padding: 30px 20px;
+  }
+}
+.service-card-66 .inner .icon {
+  position: relative;
+  display: inline-block;
+  margin-bottom: 15px;
+}
+.service-card-66 .inner .icon img {
+  max-height: 60px;
+}
+.service-card-66 .inner .icon .opacity_image {
+  position: absolute;
+  transform: translateX(-50%) scale(0.8);
+  opacity: 0.8;
+  z-index: -1;
+  -webkit-filter: blur(15px);
+  filter: blur(15px);
+  left: 50%;
+  top: 30%;
+}
+.service-card-66 .inner .content {
+  padding-top: 10px;
+}
+.service-card-66 .inner .content .title {
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 32px;
+  margin-bottom: 8px;
+  transition: 0.4s;
+}
+@media only screen and (min-width: 992px) and (max-width: 1199px) {
+  .service-card-66 .inner .content .title {
+    font-size: 17px;
+    line-height: 28px;
+  }
+}
+.service-card-66 .inner .content .description {
+  margin-bottom: 0;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 26px;
+}
+.service-card-66 .inner .number-text {
+  font-size: 100px;
+  font-weight: 800;
+  opacity: 0.05;
+  display: inline-block;
+  line-height: 70px;
+  position: absolute;
+  right: 15px;
+  top: 15px;
+  z-index: -1;
+}
+.service-card-66:hover .inner::before {
+  background: var(--color-gray-light);
+  transform: scale(1.1);
+  transition: transform 0.35s cubic-bezier(0.23, 1, 0.32, 1), opacity 0.1s 0s cubic-bezier(0.23, 1, 0.32, 1);
+}
+.service-card-66.bg-color .inner {
+  border-color: transparent;
+}
+
 .service-section-01 {
   position: relative;
 }
@@ -16149,7 +16349,7 @@ span.transparent-button:hover i {
   top: 0;
   left: 0;
   z-index: -1;
-  background: url(../images/bg/bg-image-28.jpg) no-repeat center/cover;
+  background: url(../images/main/bg-image-28-.webp) no-repeat center/cover;
   border-radius: var(--radius-10);
 }
 @media only screen and (min-width: 992px) and (max-width: 1199px), only screen and (min-width: 768px) and (max-width: 991px), only screen and (max-width: 767px), only screen and (max-width: 575px) {
@@ -21670,7 +21870,10 @@ Testimonial Styles
 .bg-theme-gradient-odd:nth-child(odd) .rbt-testimonial-box .description p {
   color: var(--color-white);
 }
-.bg-theme-gradient-odd:nth-child(odd) .rbt-testimonial-box .description h3{
+.bg-theme-gradient-odd:nth-child(odd) .rbt-testimonial-box .description h3 {
+  color: var(--color-white);
+}
+.bg-theme-gradient-odd:nth-child(odd) .rbt-testimonial-box .description h4 {
   color: var(--color-white);
 }
 .bg-theme-gradient-odd:nth-child(odd) .rbt-testimonial-box .clint-info-wrapper .client-info .title {
@@ -23078,6 +23281,17 @@ ul.testimonial-thumb-wrapper li a.active .thumb img {
   line-height: 1.25;
   right: 0;
   z-index: 1;
+}
+
+.progress .progress-number2 {
+  position: absolute;
+  font-size: 30px;
+  font-weight:bolder;
+  top: 0;
+  line-height: 1.25;
+  right: 0;
+  z-index: 1;
+  color: var(--color-dark);
 }
 
 .progress-info {
@@ -27383,7 +27597,7 @@ blockquote.has-text-align-right cite,
   z-index: -1;
   bottom: 0;
   right: 0;
-  background-image: url(../images/banner/CORE-CORE.png);
+  background-image: url(../images/main/CORE-CORE.png);
   background-repeat: repeat-x;
   background-size: auto;
   height: 206px;
@@ -37048,6 +37262,13 @@ Course Sidebar
 .active-dark-mode .rbt-page-banner-wrapper .rbt-banner-image::after {
   background: transparent;
 }
+
+.active-dark-mode .rbt-page-banner-wrap .rbt-banner-image {
+  background: var(--gradient-dark-2) !important;
+}
+.active-dark-mode .rbt-page-banner-wrap .rbt-banner-image::after {
+  background: transparent;
+}
 .active-dark-mode .rbt-splash-slider {
   background-image: url(../images/dark/bg/bg-image-10.jpg);
 }
@@ -37148,7 +37369,7 @@ Course Sidebar
   background: var(--color-bodyest);
 }
 .active-dark-mode .rbt-overlay-page-wrapper .breadcrumb-image-container .breadcrumb-image-wrapper {
-  background: linear-gradient(252deg, rgba(25, 35, 53, 0) 35.97%, rgba(47, 87, 239, 0.3) 100.98%), linear-gradient(110deg, rgba(25, 35, 53, 0) 38.37%, rgba(185, 102, 231, 0.4) 102.05%);
+  background: linear-gradient(252deg, rgba(25, 35, 53, 0) 35.97%, rgba(0, 113, 90, 0.3) 100.98%), linear-gradient(110deg, rgba(25, 35, 53, 0) 38.37%, rgba(0, 133, 106, 0.4) 102.05%);
 }
 .active-dark-mode .rbt-default-form label {
   color: var(--color-white-off);
@@ -38611,6 +38832,18 @@ Course Sidebar
 .active-dark-mode .service-card-6 .inner .content .description {
   color: var(--color-white-off);
 }
+
+.active-dark-mode .service-card-66 .inner {
+  border: 1px solid var(--dark-color-border);
+}
+.active-dark-mode .service-card-66 .inner .content .description {
+  color: var(--color-darker);
+}
+
+.active-dark-mode .service-card-66 h6 {
+  color: var(--color-darker);
+}
+
 .active-dark-mode .filter-button-default button,
 .active-dark-mode .filter-button-default a,
 .active-dark-mode .filter-tab-button button,
