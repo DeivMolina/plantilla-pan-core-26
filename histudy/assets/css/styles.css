@@ -129,6 +129,9 @@
   --color-pink: #C3D534;	   /*-- lime blue panduit --*/
   --color-teal: #00A07F;	   /*-- teal 10% ligther panduit --*/
   --color-blue: #6BC8FF;	   /*-- primary 72% lighter --*/
+  --color-blue2: #0088D6;	   /*-- primary 10% lighter --*/
+  --color-lime: #7B871C;	   /*-- lime text panduit --*/
+	
 
 	
   --color-darker: #192335; /*-- antes #192335 --*/
@@ -1542,7 +1545,7 @@ ul.rbt-dropdown-menu li .sub-menu li a, ul.rbt-dropdown-menu li a .right-icon, u
 
 .bg-pink-opacity {
   background: var(--pink-opacity) !important;
-  color: var(--color-pink) !important;
+  color: var(--color-lime) !important;
 }
 
 .bg-white-opacity {
@@ -8143,7 +8146,7 @@ hr {
 }
 
 .bg_image--27 {
-  background-image: url(../images/bg/bg-image-27.jpg);
+  background-image: url(../images/main/conoce/panduit-core-program-equipo.webp);
 }
 
 .bg_image--28 {
@@ -8279,7 +8282,7 @@ hr {
   border-radius: 50%;
   left: 327px;
   bottom: -68px;
-  background: linear-gradient(180deg, #FB64AD 0%, #C586EE 100%);
+  background: linear-gradient(180deg, #6BC8FF 0%, #EDF8FF 100%);
   filter: blur(300px);
   transform: rotate(-45deg);
 }
@@ -15217,7 +15220,7 @@ span.transparent-button:hover i {
   left: 0;
   width: 100%;
   height: 2px;
-  background: linear-gradient(90deg, #5163FF 0%, #FB64AD 100%);
+  background: linear-gradient(90deg, #0071B2 0%, #6BC8FF 100%);
   transition: all 0.3s ease;
   opacity: 0.2;
 }
@@ -17237,7 +17240,7 @@ span.transparent-button:hover i {
   border-radius: 50%;
   right: 95px;
   bottom: 85px;
-  background: linear-gradient(180deg, var(--color-primary) 0%, #FE71B9 100%);
+  background: linear-gradient(180deg, var(--color-primary) 0%, #00A07F 100%);
   filter: blur(150px);
   transform: rotate(-45deg);
   z-index: -1;
@@ -19048,7 +19051,7 @@ span.transparent-button:hover i {
   margin-right: 10px;
 }
 .pricing-table .pricing-body .list-item li + li {
-  margin-top: 16px;
+  margin-top: 14px;
 }
 @media only screen and (max-width: 767px) {
   .pricing-table .pricing-body .list-item li + li {
@@ -19061,6 +19064,7 @@ span.transparent-button:hover i {
 .pricing-table .pricing-body .list-item li.off i {
   color: var(--color-danger);
 }
+
 .pricing-table.style-2 .pricing-body {
   margin-bottom: 0;
   margin-top: 30px;
@@ -19131,7 +19135,8 @@ span.transparent-button:hover i {
   }
 }
 .pricing-table.style-3 .pricing-body .list-item li {
-  justify-content: center;
+    display: block;
+	justify-content: center;
 }
 .pricing-table.style-3 .pricing-body .list-item li.off {
   text-decoration: line-through;
@@ -20967,9 +20972,9 @@ span.transparent-button:hover i {
   position: absolute;
   width: 249px;
   height: 249px;
-  left: -151px;
-  top: -235px;
-  background: linear-gradient(180deg, rgba(0, 194, 255, 0) 0%, #FF29C3 100%);
+  left: -131px;
+  top: -205px;
+  background: linear-gradient(180deg, rgba(107, 200, 255, 0) 0%, #6BC8FF 100%);
   filter: blur(100px);
   border-radius: 50%;
 }
@@ -22809,7 +22814,7 @@ ul.testimonial-thumb-wrapper li a.active .thumb img {
   }
 }
 .rbt-default-tab .tab-button .tabs__tab .nav-link.active {
-  background: var(--color-extra2);
+  background: var(--color-pink);
   border-color: transparent;
 }
 .rbt-default-tab .tab-button .rainbow-tab-button button {
@@ -23016,7 +23021,7 @@ ul.testimonial-thumb-wrapper li a.active .thumb img {
   border-radius: 50%;
   right: 26%;
   top: 294px;
-  background: linear-gradient(180deg, #FB64AD 0%, #C586EE 100%);
+  background: linear-gradient(180deg, #6BC8FF 0%, #EDF8FF 100%);
   filter: blur(200px);
   transform: rotate(-45deg);
 }
@@ -30782,9 +30787,12 @@ blockquote.has-text-align-right cite,
   background: var(--color-gray-light);
 }
 .rbt-banner-25-review .heart i {
-  color: var(--color-danger);
+  color: var(--color-blue2);
   font-size: 15px;
 }
+
+
+
 .rbt-banner-25-review .review-title {
   font-weight: 600;
   font-size: 20px;
@@ -33564,7 +33572,7 @@ Course Sidebar
   border-radius: 50%;
   top: -240px;
   right: 86px;
-  background: linear-gradient(180deg, #FB64AD 0%, var(--color-primary) 100%);
+  background: linear-gradient(180deg, #6BC8FF 0%, var(--color-primary) 100%);
   filter: blur(150px);
   transform: rotate(-45deg);
 }
@@ -33580,7 +33588,7 @@ Course Sidebar
   border-radius: 50%;
   left: 108px;
   bottom: -74px;
-  background: linear-gradient(180deg, #FB64AD 0%, var(--color-primary) 100%);
+  background: linear-gradient(180deg, #6BC8FF 0%, var(--color-primary) 100%);
   filter: blur(100px);
 }
 @media only screen and (min-width: 992px) and (max-width: 1199px), only screen and (min-width: 768px) and (max-width: 991px), only screen and (max-width: 767px), only screen and (max-width: 575px) {
