@@ -264,7 +264,7 @@
 	
   --gradient-1: linear-gradient(rgb(255, 255, 255) 0%, rgb(216, 241, 255) 100%);
   --gradient-4: linear-gradient(180deg, #fff, #f6f9ff);
-  --gradient-2: linear-gradient(0deg, rgb(255, 255, 251) 0%, rgb(191, 220, 237) 100%);
+  --gradient-2: linear-gradient(0deg, rgb(251, 253, 255) 0%, rgb(211, 238, 255) 100%);
   --gradient-3: linear-gradient(180deg, #0071B2 0%, #005F94 100%);
   --gradient-4: linear-gradient(180deg, #bfeae1 0%, #FFFFFF 100%);
   --gradient-5: linear-gradient(rgb(216, 241, 255) 0%, rgb(221, 251, 245) 100%);
@@ -8118,7 +8118,7 @@ hr {
 }
 
 .bg_image--20 {
-  background-image: url(../images/bg/bg-image-20.jpg);
+  background-image: url(../images/main/home/slider/sLIDER-OP-7-CORE.webp);
 }
 
 .bg_image--21 {
@@ -13710,7 +13710,7 @@ fieldset:disabled {
   transition: 0.4s;
 }
 .rbt-btn.btn-border-gradient {
-  background: linear-gradient(90deg, #0071B2, #80d5c4);
+  background: linear-gradient(90deg, #0071B2, #6BC8FF);
   border: none;
   outline: none;
   cursor: pointer;
@@ -18711,7 +18711,7 @@ span.transparent-button:hover i {
   overflow: hidden;
 }
 .rbt-counterup.border-bottom-gradient::before {
-  background: linear-gradient(90deg, #0071B2, #80d5c4);
+  background: linear-gradient(90deg, #0071B2, #6BC8FF);
   position: absolute;
   content: "";
   left: 0;
@@ -19334,7 +19334,7 @@ span.transparent-button:hover i {
   display: flex;
   align-items: center;
   background: rgba(195, 213, 2, 0.8);
-  box-shadow: 0 12px 22px 0 rgba(0, 116, 184, 0.28);
+  box-shadow: 0 8px 18px 0 rgba(25, 62, 146, 0.28);
   padding: 0 20px;
   border: 1px solid #fff;
   border-radius: 500px;
@@ -20098,7 +20098,7 @@ span.transparent-button:hover i {
   height: 240px;
   right: -96px;
   margin: 0 auto;
-  background-image: linear-gradient(90deg, #0071B2, #80d5c4);
+  background-image: linear-gradient(90deg, #00856A, #0071B2);
   opacity: 0.09;
   border-radius: 100%;
   box-sizing: border-box;
