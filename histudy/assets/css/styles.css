@@ -1492,7 +1492,7 @@ ul.rbt-dropdown-menu li .sub-menu li a, ul.rbt-dropdown-menu li a .right-icon, u
 }
 
 .bg-gradient-13 {
-  background: linear-gradient(180deg, rgba(218, 251, 255, 0) 0%, #DAFBFF 100%) !important;
+  background: linear-gradient(0deg, rgba(218, 251, 255, 0) 0%, #DAFBFF 100%) !important;
 }
 
 .bg-gradient-14 {
@@ -22731,8 +22731,6 @@ ul.testimonial-thumb-wrapper li a.active .thumb img {
   margin-bottom: 0;
   font-weight: 500;
 }
-
-
 
 
 .advance-tab-content-style-2 {
