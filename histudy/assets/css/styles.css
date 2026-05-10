@@ -11630,6 +11630,11 @@ ul.rbt-dropdown-menu.currency-menu li .sub-menu {
   max-height: 25px; /*-original 50px, cambió por registro, ver si se tiene que regresar a 50 para no afectar la plantilla--*/
   object-fit: cover;
 }
+
+.rbt-header .logo2 a img {
+  max-height: 50px; /*-original 50px, cambió por registro, ver si se tiene que regresar a 50 para no afectar la plantilla--*/
+  object-fit: cover;
+} 
 @media only screen and (max-width: 575px) {
   .rbt-header .logo a {
     height: auto;
